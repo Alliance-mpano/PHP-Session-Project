@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(123, 142, 179);
+}
+.form{
+    border-radius: 10px;
+    width: 45%;
+    background-color: rgb(247, 250, 252);
+    margin: auto;
+    margin-top: 3%;
+    padding: 20px 0px 20px 40px;
+}
+label:not(.special) {
+    display: inline-block;
+    width: 40%;
+}
+label{
+    vertical-align: middle;
+    font-size: 16px;
+}
+.languages{
+    display: inline-block;
+    width: 40%;
+}
+.language{
+    width: 45%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.gender{
+    display: inline;
+}
+.row{
+    margin: 5px;
+}
+input[type=text],input[type=email],input[type=password],input[type=file],input[type=tel],select,textarea{
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 45%;
+    padding: 5px 0px 5px 10px;
+    font-size: 14px;
+    background-color: rgb(211, 224, 248);
+}
+input[type=submit]{
+    height: 35px;
+    width: 20%;
+    background-color: rgb(123, 142, 179);
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+}
+input:hover,textarea:hover{
+    background-color: rgb(228, 241, 248);
+    border: 1px solid rgb(63, 119, 216);
+    color: black;
+}
+textarea{
+    height: 80px;
+}
+@media only screen and (max-width: 768px){
+    .form{
+        width:100%;
+        padding: 20px 20px;
+        margin-top: 0;
+    }
+    label:not(.special){
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    input[type=text],input[type=password],input[type=email],input[type=tel],select,input[type=file],textarea,.languages {
+        width: 100%;
+    }
+    .language{
+        width: 100%;
+    }
+    .special{
+        margin-right: 15px;
+    }
+    input[type=submit]{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1240px){
+    .form{
+        width: 80%;
+        /* height: 1000px; */
+    }
+    label{
+        font-size: 1.5em;
+    }
+    input[type=text],input[type=password],input[type=email],input[type=tel],select,input[type=file] {
+        font-size: 1.4em;
+        height: 60px;
+        /* vertical-align: middle; */
+    }
+    input[type=submit]{
+        width: 30%;
+        height: 50px;
+        font-size: 1.5em;
+    }
+}
+/* @media only screen and (min-width:1240px){
+    .form{
+        width: 60%;
+    }
+    label{
+        font-size: 1.2em;
+    }
+    input[type=text],input[type=email],input[type=tel],select,input[type=file]{
+        height: 50px;
+        font-size: 1.4em;
+    }
+    input[type=submit]{
+        width: 30%;
+        height: 50px;
+        font-size: 1.5em;
+    }
+} */
